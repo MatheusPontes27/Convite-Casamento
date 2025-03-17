@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Casamento</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carta" id="carta">
+            <object data="./1.svg" type=""></object>
+            <div class="lacre" id="lacre">&#128140;</div>
+        </div>
+        <div class="convite" id="convite">
+            <object data="./2.svg" type=""></object>
+        </div>
+    </div>
+    <div class="convite 2" id="convite">
+        <object data="./2.svg" type=""></object>
+        <button id="confirmar">Confirmar Presença</button>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <h3>Confirme sua presença</h3>
+            <input type="text" id="nome" placeholder="Seu nome">
+            <input type="text" id="telefone" placeholder="Seu telefone">
+            <button id="enviar">Enviar</button>
+            <button id="fechar">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
