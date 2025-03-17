@@ -26,28 +26,6 @@ body {
     bottom: 24px;
 }
 
-.lacre-texto {
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-}
-
-.convite {
-    display: none;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    width: 300px;
-    text-align: center;
-}
-
 .overlay {
     display: none;
     position: fixed;
@@ -72,13 +50,13 @@ body {
     position: absolute;
     width: 10%;
     height: 10%;
-    background-color:transparent;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
     align-items: center;
-    left: 405px;
-    top: 630px;
+    left: 555px;
+    top: 610px;
 }
 
 .btn-transparente2 {
@@ -90,47 +68,52 @@ body {
     cursor: pointer;
     z-index: 10;
     align-items: center;
-    left: 405px;
-    top: 665px;
+    left: 555px;
+    top: 650px;
 }
 
 .btn-transparente3 {
     position: absolute;
     width: 5%;
     height: 5%;
-    background-color: #333;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
     align-items: center;
-    left: 345px;
-    top: 755px;
+    left: 505px;
+    top: 730px;
 }
 
 .btn-transparente4 {
     position: absolute;
     width: 5%;
     height: 5%;
-    background-color: #333;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
     align-items: center;
-    left: 430px;
-    top: 755px;
+    left: 590px;
+    top: 730px;
 }
 
 .btn-transparente5 {
     position: absolute;
     width: 5%;
     height: 5%;
-    background-color: #333;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     z-index: 10;
     align-items: center;
-    left: 515px;
-    top: 755px;
+    left: 675px;
+    top: 735px;
+}
+
+.imagem-carta {
+    width: 50%;      /* Ajuste para que a imagem ocupe 100% do espaço disponível */
+    height: auto;     /* Mantém a proporção da imagem */
 }
 
 object {
