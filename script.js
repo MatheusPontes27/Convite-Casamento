@@ -23,36 +23,38 @@ ScrollReveal().reveal('.container3', {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  let audio = document.getElementById("background-music");
+  var audio = document.getElementById("background-music");
 
   // Recupera o tempo salvo
   let savedTime = localStorage.getItem("musicTime");
 
+  // Se houver, posiciona o áudio na posição salva
   if (savedTime) {
       audio.currentTime = parseFloat(savedTime);
   }
 
-  // Salva o tempo da música antes de sair da página
+  // Salva o tempo de reprodução atual ao sair da página
   window.addEventListener("beforeunload", function () {
       localStorage.setItem("musicTime", audio.currentTime);
   });
 
-  audio.play();
+  // Tenta iniciar o áudio automaticamente
+  audio.play().catch(function (error) {
+      console.log("Erro ao tentar reproduzir o áudio: ", error);
+  });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  var audio = document.getElementById('background-music');
-  
-  // Verificar se o áudio foi encontrado
-  if (audio) {
-      // Tentando reproduzir o áudio automaticamente
-      audio.play().catch(function (error) {
-          console.log("Erro ao tentar reproduzir o áudio: ", error);
-      });
-  } else {
-      console.log("Elemento de áudio não encontrado");
-  }
-});
+var promise = document.querySelector('video').play();
+
+if (promise !== undefined) {
+  promise.then(_ => {
+    // A reprodução foi iniciada com sucesso
+  }).catch(error => {
+    // A reprodução foi bloqueada
+    // Exiba um botão de "Play"
+    console.log("Erro ao tentar reproduzir o áudio:", error);
+  });
+}
 
 
 
