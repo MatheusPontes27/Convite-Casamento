@@ -22,39 +22,13 @@ ScrollReveal().reveal('.container3', {
   easing: 'ease-in-out', // Efeito de transição
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var audio = document.getElementById("background-music");
-
-  // Recupera o tempo salvo
-  let savedTime = localStorage.getItem("musicTime");
-
-  // Se houver, posiciona o áudio na posição salva
-  if (savedTime) {
-      audio.currentTime = parseFloat(savedTime);
-  }
-
-  // Salva o tempo de reprodução atual ao sair da página
-  window.addEventListener("beforeunload", function () {
-      localStorage.setItem("musicTime", audio.currentTime);
-  });
-
-  // Tenta iniciar o áudio automaticamente
-  audio.play().catch(function (error) {
+document.getElementById('play-button').addEventListener('click', function() {
+  var audio = document.getElementById('background-music');
+  audio.play().catch(function(error) {
       console.log("Erro ao tentar reproduzir o áudio: ", error);
   });
 });
 
-var promise = document.querySelector('video').play();
-
-if (promise !== undefined) {
-  promise.then(_ => {
-    // A reprodução foi iniciada com sucesso
-  }).catch(error => {
-    // A reprodução foi bloqueada
-    // Exiba um botão de "Play"
-    console.log("Erro ao tentar reproduzir o áudio:", error);
-  });
-}
 
 
 
