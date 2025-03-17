@@ -14,26 +14,6 @@ body {
     text-align: center;
 }
 
-.envelope {
-    width: 300px;
-    height: 200px;
-    background: url('envelope-branco.png') no-repeat center/cover;
-    position: relative;
-    transition: opacity 1s ease-in-out;
-}
-
-.lacre {
-    width: 60px;
-    height: 60px;
-    background: url('lacre-brasao.png') no-repeat center/cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    z-index: 2;
-}
-
 .lacre-texto {
     position: absolute;
     top: 110%;
@@ -85,6 +65,19 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
+.btn-transparente {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    align-items: center;
+    left: 405px;
+    top: 630px;
+  }
 
 object {
     width: 900px;
