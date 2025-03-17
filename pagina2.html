@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="./style.css">
    <script src="https://unpkg.com/scrollreveal"></script>
    <script src="script.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
    
 
 </head>
@@ -15,7 +16,20 @@
     <div class="carta" id="carta">
       <img src="./2.jpg" alt="Convite de Casamento" class="imagem-carta">
       <button class="btn-transparente2" onclick="window.location.href='pagina3.html';"></button>
-    </div>    
+    </div>
+    <div id="confetes-container"></div>
+    
+    <script>
+      // Função para disparar confetes automaticamente ao carregar a página
+      window.onload = function() {
+          confetti({
+              particleCount: 300,    // Número de partículas
+              spread: 80,            // Espalhamento dos confetes
+              origin: { x: 0.5, y: 0.5 }, // Posição de origem no meio da tela
+              colors: ['#d03678', '#ece4c5', '#d03678', '#819246'] // Cores dos confetes
+          });
+      }
+  </script>
   
 </body>
 </html>

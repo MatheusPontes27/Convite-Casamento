@@ -22,12 +22,7 @@ ScrollReveal().reveal('.container3', {
   easing: 'ease-in-out', // Efeito de transição
 });
 
-document.getElementById('play-button').addEventListener('click', function() {
-  var audio = document.getElementById('background-music');
-  audio.play().catch(function(error) {
-      console.log("Erro ao tentar reproduzir o áudio: ", error);
-  });
-});
+
 
 
 
