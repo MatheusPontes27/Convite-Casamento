@@ -27,6 +27,10 @@
     font-weight: 900;
     width: 100px;
   }
+
+  #days .time-segment {
+    width: 135px; /* Maior para suportar até três dígitos */
+  }
   
   .segment-display {
     position: relative;
