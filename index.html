@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosso Casamento</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js" defer></script>
-    
-
+    <title>Casamento Matheus & Aline</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tick/1.9.4/tick.min.js"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Meow+Script&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');</style>
 </head>
-<body>   
-    <div class="container1">
-        <div class="carta" id="carta">
-            <img src="./1.jpg" alt="Convite de Casamento" class="imagem-carta">
-            <button class="btn-transparente1" onclick="window.location.href='pagina2.html';"></button>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>💍 Aline & Matheus</h1>
+            <p>Contagem Regressiva para o Grande Dia!</p>
         </div>
+        <div class="header-buttons">
+            <button class="btn" onclick="window.location.href='pagina1.html';">📜 Abrir Convite</button>
+            <button class="btn confirm" id="confirmPresence">✅ Confirmar Presença</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contador Regressivo -->
+        <div class="tick" data-did-init="handleTickInit">
+            <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
+                <div class="tick-group">
+                    <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                        <span data-view="flip"></span>
+                    </div>
+                    <span data-key="label" data-view="text" class="tick-label"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tick-onended-message" style="display: none">
+            <p>🎊 O GRANDE DIA CHEGOU !!! 🎊</p>
+        </div>
+
+        <!-- Área do convite (inicialmente oculta) -->
+        <div id="inviteContainer" class="invite-container">
+            <p>✨ Você está convidado para celebrar este dia especial conosco! ✨</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
 
 </body>
 </html>
