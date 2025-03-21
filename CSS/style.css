@@ -431,6 +431,118 @@ button {
 .yes { background: green; color: white; }
 .no { background: red; color: white; }
 
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .banner .image img {
+        width: 80%;
+    }
+    
+    .aboutSection .container,
+    .portfolioSection .portfolioGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutSection .aboutImage img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .portfolioSection .portfolioItem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeSection .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .homeSection .navList.active {
+        display: flex;
+    }
+
+    .homeSection .navList li {
+        margin: 10px 0;
+    }
+
+    .homeSection .navBar {
+        padding: 0 5%;
+    }
+
+    .banner .info h1 {
+        font-size: 36px;
+    }
+
+    .banner .info h2 {
+        font-size: 28px;
+    }
+
+    .banner .info p {
+        font-size: 16px;
+    }
+
+    .servicesSection .serviceItem {
+        width: 100%;
+    }
+
+    .contactSection form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .homeSection .logo h1 {
+        font-size: 28px;
+    }
+
+    .banner .info h1 {
+        font-size: 28px;
+    }
+
+    .banner .info h2 {
+        font-size: 24px;
+    }
+
+    .banner .info p {
+        font-size: 14px;
+    }
+
+    .contactSection .formGroup input,
+    .contactSection .formGroup textarea {
+        font-size: 16px;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff69b4;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
 
 /* Keyframes for Animations */
 @keyframes pulse {
