@@ -86,7 +86,7 @@ body {
 }
 .banner .info h2 {
     font-size: 36px;
-    color: #333;
+    color: #ff69b4;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
 }
@@ -313,6 +313,29 @@ body {
 .footer .socialMedia a:hover {
     transform: scale(1.2);
     color: #ff8ab5;
+}
+
+.date {
+    font-size: 50px;
+}
+
+/* Reduzindo o tamanho do contador */
+.tick {
+    padding: 15px;
+    font-size: 10px; /* Ajuste conforme necessário */
+    margin-inline-start: -30px;
+}
+
+/* Ajustando os números do contador */
+.tick-group {
+    font-size: 50px; /* Reduzindo o tamanho dos números */
+    padding: 7px;
+}
+
+/* Ajustando os rótulos (dias, horas, minutos, segundos) */
+.tick-label {
+    font-size: 30px;
+    font-family: "Loved by the King", cursive;
 }
 
 /* Keyframes for Animations */
