@@ -39,8 +39,13 @@ function handleTickInit(tick) {
   };
 }
 
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-  document.querySelector(".navList").classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function() {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navList = document.querySelector(".navList");
+
+  menuToggle.addEventListener("click", function() {
+      navList.classList.toggle("active");
+  });
 });
 
 
