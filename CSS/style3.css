@@ -124,7 +124,8 @@ body {
     align-items: center;
 }
 .aboutSection .aboutImage img {
-    width: 500px;
+    margin-right: 20px;
+    width: 400px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px 0px #00000020;
     animation: pulse 2s infinite;
@@ -182,7 +183,7 @@ body {
 .portfolioSection {
     width: 100%;
     padding: 80px 10%;
-    background-color: #fff;
+    background-color: #f5f5f5;;
 }
 .portfolioSection .container {
     text-align: center;
@@ -229,7 +230,7 @@ body {
 .contactSection {
     width: 100%;
     padding: 80px 10%;
-    background-color: #f7f7f7;
+    background-color: #fff;
 }
 .contactSection .container {
     text-align: center;
