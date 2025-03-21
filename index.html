@@ -1,69 +1,168 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casamento Matheus & Aline</title>
-    <link rel="stylesheet" href="style2.css">
+    <!-- Link to Custom CSS Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/@pqina/flip/dist/flip.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tick/1.9.4/tick.min.js"></script>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Loved+by+the+King&family=Meow+Script&display=swap');</style>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');</style>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Delius+Swash+Caps&display=swap');</style>
+
+    <title>Aline&Matheus</title>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <button class="menu-toggle" id="menu-toggle">
-                ☰
-              </button>
-              <nav class="menu" id="menu">
-                <ul>
-                  <li><a href="#">Convite</a></li>
-                  <li><a href="#">Manual Trajes</a></li>
-                  <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Contato</a></li>
-                </ul>
-              </nav>
-            <h1>Aline & Matheus</h1>
-            <p>Contagem Regressiva para o Grande Dia!</p>
+    <div id="popup">
+        <div id="popup-content">
+            <p>Deseja reproduzir a música?</p>
+            <button class="yes" onclick="playMusic()">Sim</button>
+            <button class="no" onclick="closePopup()">Não</button>
         </div>
-        <div class="header-buttons">
-            <button class="btn" onclick="window.location.href='pagina1.html';">📜 Abrir Convite</button>
-            <button class="btn confirm" onclick="window.location.href='https://form.jotform.com/250752972852667'">✅ Confirmar Presença</button>
+    </div>
+    <div class="homeSection active">
+        <div class="navBar">
+            <div class="logo">
+                <h1>A&ensp;&&ensp;M</h1>
+            </div>
+            <ul class="navList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="./pagina1.html">Convite</a></li>
+                <li><a href="#services">Padrinhos</a></li>
+                <li><a href="https://form.jotform.com/250752972852667">Confirmação Presença</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </div>
-    </header>
-
-    <main>
-        <div class="date">
-          <p>05.07.2025</p>
-        </div>
-        <!-- Contador Regressivo -->
-        <div class="tick" data-did-init="handleTickInit">
-            <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
-                <div class="tick-group">
-                    <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
-                        <span data-view="flip"></span>
+        <div class="banner">
+            <div class="info">
+                <h1>Aline&ensp; & &ensp;<span class="highlight">Matheus ❤️</span></h1>
+                <h2>05.07.2025</h2>
+                <p>Com o coração transbordando de alegria, convidamos você para compartilhar esse momento especial conosco. Sua presença tornará nossa felicidade ainda maior!</p>
+                <!-- Contador Regressivo -->
+                <div class="tick" data-did-init="handleTickInit">
+                    <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
+                        <div class="tick-group">
+                            <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                                <span data-view="flip"></span>
+                            </div>
+                            <span data-key="label" data-view="text" class="tick-label"></span>
+                        </div>
                     </div>
-                    <span data-key="label" data-view="text" class="tick-label"></span>
+                </div>
+        
+                <div class="tick-onended-message" style="display: none">
+                    <p>🎊 O GRANDE DIA CHEGOU !!! 🎊</p>
+                </div>
+    
+            </div>
+            <div class="image">
+                <img src="./IMG/matheusealine.png" alt="Banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutSection" id="about">
+        <div class="container">
+            <div class="aboutImage">
+                <img src="./IMG/alineeeu.png" alt="About Image">
+            </div>
+            <div class="aboutContent">
+                <h2>Sobre Nós</h2>
+                <p>Tudo começou em junho de 2024, quando nossas vidas se cruzaram por uma paixão em comum: motos. Entre conversas, risadas e muitos quilômetros rodados, descobrimos que tínhamos muito mais em comum do que imaginávamos. Cada encontro nos aproximava ainda mais, e logo percebemos que estávamos construindo algo especial.
+
+                    Com o tempo, nosso amor cresceu, nos tornando não apenas companheiros de estrada, mas de vida. Compartilhamos sonhos, desafios e conquistas, sempre apoiando um ao outro em cada novo passo.
+                    
+                    Hoje, chegamos a este momento tão esperado, prontos para dar o próximo grande passo juntos. O casamento não é apenas a celebração do nosso amor, mas o início de uma nova jornada, repleta de planos, aventuras e, acima de tudo, muito amor.
+                    
+                    Estamos felizes em compartilhar essa alegria com vocês e mal podemos esperar para celebrar ao lado de quem fez parte da nossa história! ❤️</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolioSection" id="portfolio">
+        <div class="container">
+            <h2>Manual Convidado</h2>
+            <div class="portfolioGrid">
+                <div class="portfolioItem">
+                    <img src="./IMG/confirmar.jpeg" alt="Portfolio Item">
+                    <h3>Confirmação de Presença</h3>
+                    <p>Não Esqueça de confirmar sua presença, contamos com você nesse momento para ser ainda mais especial</p><br>
+                    <button class="btn confirm" onclick="window.location.href='https://form.jotform.com/250752972852667'">✅ Confirmar Presença</button>
+                </div>
+                <div class="portfolioItem">
+                    <img src="./IMG/traje_para_casamento_facebook.jpg" alt="Portfolio Item">
+                    <h3>O que vestir ?</h3>
+                    <p>O traje para o nosso grande dia é esporte fino, garantindo elegância e conforto para celebrarmos juntos esse momento especial! ✨</p>
+                </div>
+                <div class="portfolioItem">
+                    <img src="./IMG/presente.jpeg" alt="Portfolio Item">
+                    <h3>Pix Presente</h3><br>
+                    <p>Contribua para nossa Lua de Mel,</p>
+                    <p>ao invés de presentes, estamos pedindo R$100 por convidado!</p><br>
+                    <p>Chave pix:&ensp; 11164724495</p>
+                    <p>Matheus Emmanuel Maciel Pontes</p>
+                    <p>Will Financeira</p><br>
+                    <button class="btn confirm" onclick="window.location.href='https://linkpix.co/@casamentomatheusealine'">✅ CHAVE PIX</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="tick-onended-message" style="display: none">
-            <p>🎊 O GRANDE DIA CHEGOU !!! 🎊</p>
+    <div class="evento">
+        <div class="cerimonia">
+            <h2>A Cerimônia</h2><br>
+            <p>Sábado, 05 de julho, 2025</p>
+            <p>17:30hrs - 19:00hrs</p>
+            <p>Igreja Matriz de Nossa Senhora da Imaculada Conceição</p>
+            <p>Fortaleza CE, Brasil</p>
         </div>
-
-        <!-- Área do convite (inicialmente oculta) -->
-        <div id="inviteContainer" class="invite-container">
-            <p>✨ Você está convidado para celebrar este dia especial conosco! ✨</p>
+        
+        <div class="recepcao">
+            <h2>A Recepção</h2><br>
+            <p>Sábado, 05 de Julho, 2025</p>
+            <p>19:30 AM - 23:30 PM</p>
+            <p>Bella Maison Buffet</p>
+            <p>Av. Luciano Carneiro, 2153, Fortaleza, Brasil</p>
         </div>
-    </main>
+    </div>
+    
+    <!-- Mapa -->
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4177.871743661326!2d-38.4932413!3d-3.831603299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74ffd00479e0d%3A0xfaeadeb0a8b2980d!2sIgreja%20Matriz%20de%20Nossa%20Senhora%20da%20Imaculada%20Concei%C3%A7%C3%A3o!5e1!3m2!1spt-BR!2sbr!4v1742580079475!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="footer">
+        <div class="footerLogo">
+            <h1>Aline&ensp;&&ensp;Matheus</h1>
+        </div>
+        <div class="socialMedia">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
     <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
 
 </body>
+<audio id="musica" autoplay loop>
+    <source src="./mp3/ruth b. - dandelions (tiktok version) I’m in a field of dandelions + lyrics in the description.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+</audio>
+<script>
+    function playMusic() {
+        document.getElementById("musica").play();
+        closePopup(); // Fecha o pop-up após aceitar
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
 </html>
