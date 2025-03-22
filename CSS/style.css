@@ -431,103 +431,6 @@ button {
 .yes { background: green; color: white; }
 .no { background: red; color: white; }
 
-@media (max-width: 1024px) {
-    .banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-
-    .banner .image img {
-        width: 80%;
-    }
-    
-    .aboutSection .container,
-    .portfolioSection .portfolioGrid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .aboutSection .aboutImage img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    
-    .portfolioSection .portfolioItem {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .homeSection .navList {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.9);
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .homeSection .navList.active {
-        display: flex;
-    }
-
-    .homeSection .navList li {
-        margin: 10px 0;
-    }
-
-    .homeSection .navBar {
-        padding: 0 5%;
-    }
-
-    .banner .info h1 {
-        font-size: 36px;
-    }
-
-    .banner .info h2 {
-        font-size: 28px;
-    }
-
-    .banner .info p {
-        font-size: 16px;
-    }
-
-    .servicesSection .serviceItem {
-        width: 100%;
-    }
-
-    .contactSection form {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .homeSection .logo h1 {
-        font-size: 28px;
-    }
-
-    .banner .info h1 {
-        font-size: 28px;
-    }
-
-    .banner .info h2 {
-        font-size: 24px;
-    }
-
-    .banner .info p {
-        font-size: 14px;
-    }
-
-    .contactSection .formGroup input,
-    .contactSection .formGroup textarea {
-        font-size: 16px;
-    }
-}
-
 .menu-toggle {
     display: none;
     font-size: 30px;
@@ -543,6 +446,167 @@ button {
     }
 }
 
+/* Estilizando o menu para telas menores */
+@media screen and (max-width: 768px) {
+    .navBar {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navList.active {
+        display: flex;
+    }
+
+    .navList li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 1024px) {
+    .homeSection .navBar {
+        padding: 0 5%;
+    }
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+    .banner .image img {
+        width: 90%;
+        max-width: 350px;
+    }
+    .aboutSection .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutSection .aboutImage img {
+        width: 80%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    .servicesSection .serviceItem {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeSection .navBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5%;
+        text-align: center;
+    }
+    .homeSection .navList {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .homeSection .navList li {
+        margin: 10px 0;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    .banner h2 {
+        font-size: 24px;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+    .portfolioSection .portfolioGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolioSection .portfolioItem {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contactSection form {
+        width: 100%;
+    }
+    .contactSection input,
+    .contactSection textarea {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .tick-group {
+        font-size: 30px;
+    }
+    .tick-label {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homeSection .logo h1 {
+        font-size: 28px;
+    }
+    .homeSection .navBar {
+        padding: 10px;
+    }
+    .banner .info h1 {
+        font-size: 28px;
+    }
+    .banner .info h2 {
+        font-size: 20px;
+    }
+    .banner .info p {
+        font-size: 14px;
+    }
+    .banner .socialMedia a {
+        font-size: 20px;
+    }
+    .portfolioSection .portfolioItem h3 {
+        font-size: 20px;
+    }
+    .portfolioSection .portfolioItem p {
+        font-size: 16px;
+    }
+    .contactSection h2 {
+        font-size: 28px;
+    }
+    .contactSection input,
+    .contactSection textarea {
+        font-size: 14px;
+        padding: 6px;
+    }
+    .footer h1 {
+        font-size: 24px;
+    }
+    .footer .socialMedia a {
+        font-size: 20px;
+    }
+}
 
 /* Keyframes for Animations */
 @keyframes pulse {
