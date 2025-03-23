@@ -39,9 +39,21 @@ function handleTickInit(tick) {
   };
 }
 
-function toggleMenu() {
-  document.querySelector(".navList").classList.toggle("active");
-}
+// Seleção dos elementos corretos
+let btnMenu = document.querySelector('.btn-menu');  // Botão de abrir menu
+let menu = document.querySelector('.menu-mobile');  // Menu
+let btnFechar = document.querySelector('.btn-fechar');  // Botão de fechar menu
+
+// Abre o menu ao clicar no botão de abrir
+btnMenu.addEventListener('click', () => {
+    menu.classList.add('abrir-menu');  // Adiciona a classe para abrir o menu
+});
+
+// Fecha o menu ao clicar no botão de fechar
+btnFechar.addEventListener('click', () => {
+    menu.classList.remove('abrir-menu');  // Remove a classe para fechar o menu
+});
+
 
 
 
