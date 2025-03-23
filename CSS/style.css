@@ -503,6 +503,10 @@ button {
     .contactSection form {
         width: 100%;
     }
+
+    .homeSection .hamburger {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -528,18 +532,64 @@ button {
     }
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #ff69b4;
+/* Menu no Mobile */
+@media (max-width: 768px) {
+    /* Esconde os links no mobile */
+    .homeSection .navList {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .homeSection .navList.active {
+        display: flex;
+    }
+
+    .homeSection .navList li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .homeSection .navList li a {
+        font-size: 20px;
+        padding: 10px;
+        display: block;
+    }
+
+    /* Estilos para o botão do menu */
+    .homeSection .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #ff69b4;
+    }
+
+    .homeSection .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homeSection .logo h1 {
+        font-size: 28px;
+    }
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+/* Exibe o menu de navegação no desktop */
+@media (min-width: 769px) {
+    .homeSection .navList {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .homeSection .hamburger {
+        display: none;
     }
 }
 
