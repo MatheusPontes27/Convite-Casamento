@@ -39,21 +39,9 @@ function handleTickInit(tick) {
   };
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.querySelector(".toggle");
-  const navList = document.querySelector(".navList");
-
-  toggleButton.addEventListener("click", function () {
-      navList.classList.toggle("active");
-  });
-
-  // Fechar menu ao clicar em um item (opcional)
-  document.querySelectorAll(".navList li a").forEach((item) => {
-      item.addEventListener("click", () => {
-          navList.classList.remove("active");
-      });
-  });
-});
+function toggleMenu() {
+  document.querySelector(".navList").classList.toggle("active");
+}
 
 
 

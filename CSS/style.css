@@ -431,19 +431,50 @@ button {
 .yes { background: green; color: white; }
 .no { background: red; color: white; }
 
-.menu-toggle {
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menuToggle {
     display: none;
-    font-size: 30px;
+    font-size: 28px;
     background: none;
     border: none;
     cursor: pointer;
-    color: #ff69b4;
 }
 
+/* Esconder a lista de navegação por padrão no mobile */
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
+    .menuToggle {
+        display: block; /* Exibir botão ☰ no mobile */
     }
+
+    .navList {
+        display: none;  /* O menu começa oculto */
+        /* Outras propriedades para o menu */
+      }
+      
+      /* Estilo para o menu quando a classe 'active' for adicionada */
+      .navList.active {
+        display: block;  /* O menu será exibido quando a classe 'active' for adicionada */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        /* Outras propriedades de estilo para o menu */
+      }
 }
 
 /* Responsividade para telas menores */
@@ -476,7 +507,7 @@ button {
 
 @media screen and (max-width: 768px) {
     .homeSection .navBar {
-        flex-direction: column;
+        flex-direction:column;
         height: auto;
         padding: 10px 5%;
         text-align: center;
