@@ -152,8 +152,6 @@ button {
     .btn-transparente5 {
         width: 50%; /* Ajusta o tamanho dos botões para ocupar metade da tela */
         height: auto; /* Ajusta a altura automaticamente */
-        background-color: rgba(0, 0, 255, 0.5); /* Adiciona cor de fundo para visualização */
-        border: 2px solid #000; /* Adiciona uma borda para destacar o botão */
     }
 
     .btn-transparente1,
@@ -172,8 +170,8 @@ button {
     }
 
     .btn-transparente2 {
-        top: 35%;
-        width: 55%;
+        top: 70%;
+        width: 35%;
         height: 20%;
     }
 
