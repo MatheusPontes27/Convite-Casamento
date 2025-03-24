@@ -29,12 +29,19 @@ Este é o site oficial do meu casamento! Criado com carinho para compartilhar os
 
 ## 📸 Preview
 
-![Prévia do site](./IMG/Captura%20de%20tela%202025-03-24%20024931.png)  
+Desktop:
+
+![Prévia do site](./IMG/Captura%20de%20tela%202025-03-24%20024931.png)
 *Uma pequena amostra do design do site do casamento.*
+
+
+Mobile:
+![Prévia do site](./IMG/Captura%20de%20tela%202025-03-24%20025331.png)
+
 
 ## 🎉 Agradecimento
 Obrigado por fazer parte desse momento especial! 💕
 
 ---
-✍️ **Desenvolvido por Matheus Emmanuel**
+✍️ **Desenvolvido por Matheus Emmanuel Maciel Pontes**
 
