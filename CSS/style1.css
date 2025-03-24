@@ -142,3 +142,69 @@ button {
     margin: 5px;
     cursor: pointer;
 }
+
+/* Media Query para telas de até 768px */
+@media (max-width: 768px) {
+    .btn-transparente1,
+    .btn-transparente2,
+    .btn-transparente3,
+    .btn-transparente4,
+    .btn-transparente5 {
+        width: 50%; /* Ajusta o tamanho dos botões para ocupar metade da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        background-color: rgba(0, 0, 255, 0.5); /* Adiciona cor de fundo para visualização */
+        border: 2px solid #000; /* Adiciona uma borda para destacar o botão */
+    }
+
+    .btn-transparente1,
+    .btn-transparente2,
+    .btn-transparente3,
+    .btn-transparente4,
+    .btn-transparente5 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn-transparente1 {
+        top: 30%;
+    }
+
+    .btn-transparente2 {
+        top: 40%;
+    }
+
+    .btn-transparente3 {
+        top: 50%;
+        width: 5%;
+        height: 5%;
+    }
+
+    .btn-transparente4 {
+        top: 60%;
+        width: 5%;
+        height: 5%;
+    }
+
+    .btn-transparente5 {
+        top: 70%;
+        width: 5%;
+        height: 5%;
+    }
+
+    .imagem-carta {
+        width: 80%; /* Aumenta o tamanho da imagem no mobile */
+    }
+
+    object {
+        width: 100%;
+        height: auto;
+    }
+
+    input {
+        width: 90%; /* Ajusta a largura dos inputs */
+    }
+
+    button {
+        width: 90%; /* Ajusta o tamanho dos botões */
+    }
+}
