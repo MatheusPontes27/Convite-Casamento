@@ -166,33 +166,40 @@ button {
     }
 
     .btn-transparente1 {
-        top: 30%;
+        top: 70%;
+        width: 35%;
+        height: 10%;
     }
 
     .btn-transparente2 {
-        top: 40%;
+        top: 35%;
+        width: 55%;
+        height: 20%;
     }
 
     .btn-transparente3 {
-        top: 50%;
+        top: 83%;
         width: 5%;
         height: 5%;
+        left: 33%;
     }
 
     .btn-transparente4 {
-        top: 60%;
+        top: 83%;
         width: 5%;
         height: 5%;
     }
 
     .btn-transparente5 {
-        top: 70%;
+        top: 83%;
         width: 5%;
         height: 5%;
+        left: 66%;
     }
 
     .imagem-carta {
-        width: 80%; /* Aumenta o tamanho da imagem no mobile */
+        width: 120%; /* Aumenta o tamanho da imagem no mobile */
+        margin-left: -10%;
     }
 
     object {
