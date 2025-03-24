@@ -30,7 +30,7 @@ Este é o site oficial do nosso casamento! Criado com carinho para compartilhar 
 
 ## 📸 Preview
 
-![Prévia do site](https://via.placeholder.com/800x400)  
+![Prévia do site](./IMG/Captura%20de%20tela%202025-03-24%20024931.png)  
 *Uma pequena amostra do design do site do casamento.*
 
 ## 🎉 Agradecimento
