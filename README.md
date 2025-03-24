@@ -1,19 +1,18 @@
 # 💍 Convite de Casamento - Matheus & Aline
 
-Este é o site oficial do nosso casamento! Criado com carinho para compartilhar os detalhes do grande dia e permitir a confirmação de presença dos convidados. 🎉
+Este é o site oficial do meu casamento! Criado com carinho para compartilhar os detalhes do grande dia e permitir a confirmação de presença dos convidados. 🎉
 
 ## ✨ Funcionalidades
 
 - 📜 Convite interativo com animação de abertura.
 - 🎶 Música ambiente opcional ao abrir o site.
 - 📍 Informações sobre a cerimônia e recepção com mapas interativos.
-- ✅ Formulário para confirmação de presença com notificação via WhatsApp.
+- ✅ Formulário para confirmação de presença com notificação via Email.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5, CSS3 e JavaScript
 - Animações CSS e JavaScript
-- API do WhatsApp para notificações
 - Google Maps para exibição de localização
 
 ## 🚀 Como Rodar Localmente
