@@ -95,17 +95,6 @@ body {
     color: #333;
     margin-bottom: 30px;
 }
-.banner .socialMedia a {
-    font-size: 24px;
-    color: #ff69b4;
-    margin-right: 20px;
-    transition: transform 0.3s, color 0.3s;
-    animation: pulse 2s infinite;
-}
-.banner .socialMedia a:hover {
-    transform: scale(1.2);
-    color: #ff8ab5;
-}
 .banner .image img {
     width: 500px;
     border-radius: 10px;
@@ -439,31 +428,101 @@ button {
 .no { background: red; color: white; }
 
 @media (max-width: 1024px) {
-    .banner {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-
-    .banner .image img {
-        width: 80%;
-    }
     
-    .aboutSection .container,
     .portfolioSection .portfolioGrid {
         flex-direction: column;
         align-items: center;
     }
 
-    .aboutSection .aboutImage img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-    
     .portfolioSection .portfolioItem {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+@media (max-width: 768px) {
+    .tick {
+        padding: 2px;
+        font-size: 1px; /* Reduzindo um pouco mais */
+        margin-inline-start: -5px;
+    }
+
+    /* Ajustando os números do contador */
+    .tick-group {
+        font-size: 20px; /* Diminuindo para melhor encaixe */
+        padding: 5px;
+    }
+
+    /* Ajustando os rótulos (dias, horas, minutos, segundos) */
+    .tick-label {
+        font-size: 15px; /* Tornando mais proporcional */
+        font-family: "Loved by the King", cursive;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Empilha os elementos */
+        text-align: center; /* Centraliza o texto */
+        padding: 80px 5%;
+        
+    }
+
+    .banner .info h1 {
+        font-size: 36px; /* Reduzindo o tamanho */
+        text-align: center; /* Mantém alinhado à esquerda */
+    }
+
+    .banner .info h2 {
+        font-size: 28px;
+    }
+
+    .banner .info p {
+        font-size: 16px;
+    }
+
+    .banner .socialMedia a {
+        font-size: 20px; /* Ícones menores */
+        margin-right: 15px;
+    }
+
+    .banner .image img {
+        width: 90%; /* Ocupa mais espaço na tela */
+        max-width: 350px; /* Limita o tamanho */
+        margin-top: 20px;
+    }
+
+    .aboutSection .container {
+        display: flex;
+        flex-direction: row; /* Mantém lado a lado */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os itens se ajustem conforme o tamanho da tela */
+        gap: 20px; /* Espaço entre imagem e texto */
+    }
+
+    .aboutSection .aboutImage {
+        flex: 1; /* Faz a imagem ocupar espaço proporcionalmente */
+        max-width: 50%; /* Garante que a imagem não ultrapasse metade da tela */
+    }
+
+    .aboutSection .aboutImage img {
+        width: 100%; /* Faz a imagem ocupar toda a div */
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px 0px #00000020;
+    }
+
+    .aboutSection .aboutText {
+        flex: 1; /* Ocupa o restante do espaço */
+        max-width: 50%; /* Garante que o texto não fique muito largo */
+        text-align: left;
+    }
+
+    .aboutSection .aboutContent h2 {
+        text-align: center;
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 768px) {
