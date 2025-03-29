@@ -24,7 +24,7 @@ body {
     color:#CF0188;
 }
 
-.section3 h2, p {
+.section3 h2, p, ul, li{
     color:#CF0188;
 }
 
@@ -162,6 +162,7 @@ h2:after {
     margin-top: 60px;
     font-style: italic;
     font-size: 1.2rem;
+    color: #CF0188;
 }
 
 .signature strong {
@@ -171,6 +172,7 @@ h2:after {
     display: block;
     margin-top: 10px;
     font-size: 1.4rem;
+    color: #CF0188;
 }
 
 ul {
@@ -232,7 +234,7 @@ li {
             width: 250px;
             margin: 30px auto 50px;
             padding: 15px 25px;
-            background-color: var(--rosa-escuro);
+            background-color: #CF0188;
             color: white;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
@@ -248,7 +250,8 @@ li {
         }
         
         .download-btn:hover {
-            background-color: var(--marrom);
+            background-color: white;
+            color:#CF0188;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
@@ -335,6 +338,35 @@ li {
         background-color: #CF0188;
     }
 
+    .section2 .dress-code-container .madrinha-box h2:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        width: 60px;
+        background-color: #CF0188;
+    
+    }
+    
+    .section2 .dress-code-container .padrinho-box h2:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        width: 60px;
+        background-color: #CF0188;
+    
+    }
+
+    .section3 h2:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        width: 60px;
+        background-color: #CF0188;
+    }
+
     .calendar {
         width: 100%;
         font-size: 0.9rem;
@@ -343,10 +375,6 @@ li {
     .calendar th, 
     .calendar td {
         padding: 5px;
-    }
-
-    .dress-code-container {
-        
     }
 
     .dress-code-box {
