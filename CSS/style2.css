@@ -8,12 +8,38 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--bege);
+    background-color: #f5e6e8;
     color: var(--marrom);
     line-height: 1.8;
     margin: 0;
     padding: 0;
     font-weight: 300;
+}
+
+.section h2, p {
+    color:#CF0188;
+}
+
+.section2 h2, p {
+    color:#CF0188;
+}
+
+.section3 h2, p {
+    color:#CF0188;
+}
+
+.calendar tr {
+    color: #CF0188;
+}
+
+.calendar th {
+    background-color: #CF0188;
+}
+
+.calendar th,
+.calendar th a,
+.calendar th span {
+    color: #eee !important;
 }
 
 .container {
@@ -79,7 +105,23 @@ h2:after {
     padding: 40px;
     margin-bottom: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    border-radius: 3px;
+    border-radius: 10px;
+}
+
+.section2 {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border-radius: 10px;
+}
+
+.section3 {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border-radius: 10px;
 }
 
 .calendar {
@@ -139,24 +181,221 @@ li {
     margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 20px 15px;
+
+.dress-code-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.dress-code-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.madrinha-box {
+    padding-left: 200px;
+}
+
+.padrinho-box {
+    padding-right: 200px;
+}
+
+.dress-code-photo {
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0; /* Inicia invisível */
+}
+
+.madrinha-photo {
+    left: 0;
+    animation: slideInLeft 1.2s ease-out forwards;
+}
+
+.padrinho-photo {
+    right: 0;
+    animation: slideInRight 1.2s ease-out forwards;
+}
+
+/* Estilo do botão de download */
+        .download-btn {
+            display: block;
+            width: 250px;
+            margin: 30px auto 50px;
+            padding: 15px 25px;
+            background-color: var(--rosa-escuro);
+            color: white;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .download-btn:hover {
+            background-color: var(--marrom);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .download-icon {
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+/* Suas keyframes personalizadas */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
     }
-    
-    .section {
-        padding: 25px;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-        margin: 35px 0 20px;
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
+
+/* Keyframes espelhada para o lado direito */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Efeito de delay para a segunda animação */
+.padrinho-photo {
+    animation-delay: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 48px;
+        width: 60px;
+        background-color: #CF0188;
+    }
+
+    .section2 {
+        flex-direction: column;
+    }
+
+    .section2 img {
+        width: 200px;
+        border-radius: 40px;
+    }
+
+    .section2 h2:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        width: 60px;
+        background-color: #CF0188;
+    }
+
+    .calendar {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .calendar th, 
+    .calendar td {
+        padding: 5px;
+    }
+
+    .dress-code-container {
+        
+    }
+
+    .dress-code-box {
+        width: 93%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .dress-code-photo {
+        width: 193%;
+        max-width: 250px;
+        height: auto;
+
+    }
+    
+    .dress-code-photo {
+        position: relative !important;
+        width: 100% !important;
+        max-height: 200px;
+    }
+    
+    .madrinha-box,
+    .padrinho-box {
+        border-left: none !important;
+        border-right: none !important;
+    }
+}
+/* Ajuste fino para mobile */
+@media (max-width: 767px) {
+    .dress-code-photo {
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+    }
+
+   /* Solução alternativa com background-image (opcional) */
+    .alternative-photo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    }
+    
+    .dress-code-box {
+        padding: 2px !important;
+    }
+}
+
+
 
 /* Keyframes for Animations */
 @keyframes pulse {
@@ -168,15 +407,5 @@ li {
     }
     100% {
         transform: scale(1);
-    }
-}
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
     }
 }
