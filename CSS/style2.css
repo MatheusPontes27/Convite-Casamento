@@ -1,0 +1,182 @@
+:root {
+    --bege: #f8f3ee;
+    --rosa-claro: #f5e6e8;
+    --rosa-escuro: #d8a3a8;
+    --marrom: #5a4a42;
+    --cinza: #8d8d8d;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bege);
+    color: var(--marrom);
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container h1 {
+    font-size: 48px;
+    color: #CF0188;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+.container .date {
+    color: #CF0188;
+}
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--marrom);
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 50px 0 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--rosa-escuro);
+}
+
+.date {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--cinza);
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border-radius: 3px;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.calendar th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--cinza);
+    padding: 10px;
+    text-align: center;
+}
+
+.calendar td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.highlight {
+    background-color:#CF0188;
+    color: white;
+    font-weight: 500;
+}
+
+.dress-code-box {
+    background-color: var(--rosa-claro);
+    padding: 30px;
+    margin: 30px 0;
+    border-left: 4px solid var(--rosa-escuro);
+}
+
+.signature {
+    text-align: center;
+    margin-top: 60px;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.signature strong {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .section {
+        padding: 25px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin: 35px 0 20px;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

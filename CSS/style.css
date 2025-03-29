@@ -38,7 +38,7 @@ body {
 }
 .homeSection .logo h1 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     transition: transform 0.3s, color 0.3s;
     animation: pulse 2s infinite;
@@ -65,7 +65,7 @@ body {
     bottom: -5px;
     width: 0;
     height: 2px;
-    background: #ff69b4;
+    background: #CF0188;
     transition: width 0.3s;
 }
 .homeSection .navList li a:hover::after {
@@ -79,14 +79,14 @@ body {
 }
 .banner .info h1 {
     font-size: 48px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 20px;
     animation: pulse 2s infinite;
 }
 .banner .info h2 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
 }
@@ -121,7 +121,7 @@ body {
 }
 .aboutSection .aboutContent h2 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 20px;
 }
@@ -143,7 +143,7 @@ body {
 }
 .servicesSection h2 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 50px;
 }
@@ -152,7 +152,7 @@ body {
 }
 .servicesSection .serviceItem i {
     font-size: 48px;
-    color: #ff69b4;
+    color: #CF0188;
     margin-bottom: 20px;
     animation: pulse 2s infinite;
 }
@@ -179,7 +179,7 @@ body {
 }
 .portfolioSection h2 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 50px;
 }
@@ -226,7 +226,7 @@ body {
 }
 .contactSection h2 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 50px;
 }
@@ -260,14 +260,14 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     color: #fff;
-    background-color: #ff69b4;
+    background-color: #CF0188;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .contactSection button:hover {
-    background-color: #ff8ab5;
+    background-color: #CF0188;
 }
 
 /* Footer Section Styles */
@@ -281,7 +281,7 @@ body {
 }
 
 .footer p {
-    color: #ff69b4;
+    color: #CF0188;
 }
 
 .footerLogo {
@@ -289,7 +289,7 @@ body {
 }
 .footerLogo h1 {
     font-size: 36px;
-    color: #ff69b4;
+    color: #CF0188;
     font-family: 'Great Vibes', cursive;
     margin-bottom: 20px;
 }
@@ -300,14 +300,14 @@ body {
 }
 .footer .socialMedia a {
     font-size: 24px;
-    color: #ff69b4;
+    color: #CF0188;
     margin-right: 20px;
     transition: transform 0.3s, color 0.3s;
     animation: pulse 2s infinite;
 }
 .footer .socialMedia a:hover {
     transform: scale(1.2);
-    color: #ff8ab5;
+    color: #CF0188;
 }
 
 .date {
@@ -356,12 +356,12 @@ body {
 }
 
 .confirm {
-    border-color: #ff69b4;
-    color: #ff69b4;
+    border-color: #CF0188;
+    color: #CF0188;
 }
 
 .confirm:hover {
-    background-color: #ff69b4;
+    background-color: #CF0188;
     color: white;
 }
 
@@ -381,15 +381,23 @@ body {
 }
 
 .cerimonia {
-    background-color: #ff69b4; /* Tom terroso */
+    background-color: #CF0188; /* Tom terroso */
     color: white;
 }
 
 .recepcao {
     background-color: #f8f8f8;
-    color: #ff69b4;
-    border-color: #ff69b4;
+    color: #CF0188;
+    border-color: #CF0188;
     border: 1px solid;
+}
+
+.banner .info .welcome-text p{
+    color: #CF0188;
+}
+
+.sobre-manual2 h2 {
+    color: #CF0188;
 }
 
 .mapa iframe {
@@ -633,7 +641,7 @@ button {
         display: block;
         cursor: pointer;
         font-size: 30px;
-        color: #ff69b4;
+        color: #CF0188;
     }
 
     .homeSection .navBar {
