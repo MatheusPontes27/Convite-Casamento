@@ -418,8 +418,10 @@ li {
     height: 250px;
     }
     
-    .dress-code-box {
-        padding: 2px !important;
+    .dress-code-box  {
+        padding: 1px;
+        margin-left: -30px;
+        width: calc(100% + 30px);
     }
 }
 
