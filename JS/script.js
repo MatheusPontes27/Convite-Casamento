@@ -53,6 +53,16 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
+function verificarSenha() {
+  const senha = prompt("Digite a senha para acessar a página de Padrinhos:");
+  // Substitua "senha123" pela senha que você deseja usar
+  if (senha === "Deus0507") {
+      window.location.href = "pagina4.html"; // substitua pelo URL real
+  } else {
+      alert("Senha incorreta. Acesso negado.");
+  }
+}
+
 
 
 

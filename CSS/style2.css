@@ -260,6 +260,33 @@ li {
             margin-right: 8px;
             vertical-align: middle;
         }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-left: 310px;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-icon {
+            width: 20px;
+            height: 20px;
+        }
 
 /* Suas keyframes personalizadas */
 @keyframes slideInLeft {
@@ -401,6 +428,22 @@ li {
         border-left: none !important;
         border-right: none !important;
     }
+
+    .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 20px;
+        background-color: #25D366;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        margin-left: 30px;
+    }
 }
 /* Ajuste fino para mobile */
 @media (max-width: 767px) {
@@ -424,8 +467,6 @@ li {
         width: calc(100% + 30px);
     }
 }
-
-
 
 /* Keyframes for Animations */
 @keyframes pulse {
