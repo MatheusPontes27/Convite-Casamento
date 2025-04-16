@@ -53,15 +53,28 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
-function verificarSenha() {
-  const senha = prompt("Digite a senha para acessar a página de Padrinhos:");
-  // Substitua "senha123" pela senha que você deseja usar
-  if (senha === "Deus0507") {
-      window.location.href = "pagina4.html"; // substitua pelo URL real
+// JS/script.js
+function verificarAcessoPadrinhos(event) {
+  event.preventDefault();
+  
+  const SENHA_CORRETA = "Deus0507"; // Altere para sua senha real
+  const senhaInserida = prompt("Área restrita\nDigite a senha para acessar:");
+  
+  if (senhaInserida === SENHA_CORRETA) {
+      window.location.href = "pagina4.html";
   } else {
-      alert("Senha incorreta. Acesso negado.");
+      alert("Senha incorreta. Fale com o casal para obter acesso.");
   }
 }
+
+// Vincula ao link existente no menu
+document.addEventListener('DOMContentLoaded', function() {
+  const linkPadrinhos = document.querySelector('a[href="pagina4.html"]');
+  
+  if (linkPadrinhos) {
+      linkPadrinhos.addEventListener('click', verificarAcessoPadrinhos);
+  }
+});
 
 
 
